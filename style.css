@@ -1,0 +1,138 @@
+/* style.css */
+
+/* Pengaturan dasar untuk seluruh halaman */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Kontainer utama untuk membungkus konten */
+.container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+}
+
+/* Judul */
+h2,
+h3 {
+  color: #1d2129;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #4267b2;
+  color: white;
+}
+
+/* Baris ganjil pada tabel agar mudah dibaca */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Form Styling */
+form table {
+  border: none;
+}
+form table td {
+  border: none;
+  padding: 8px 0;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Agar padding tidak menambah lebar */
+}
+
+/* Tombol Submit */
+input[type="submit"] {
+  background-color: #4caf50; /* Hijau */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Link dan Tombol (Anchor as Button) */
+a.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 5px 2px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+a.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-tambah {
+  background-color: #4267b2;
+} /* Biru */
+.btn-edit {
+  background-color: #f0ad4e;
+} /* Oranye */
+.btn-hapus {
+  background-color: #d9534f;
+} /* Merah */
+.btn-logout {
+  background-color: #5bc0de;
+} /* Biru muda */
+
+/* Pesan error login */
+.pesan-error {
+  color: #d9534f; /* Merah */
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 15px;
+}

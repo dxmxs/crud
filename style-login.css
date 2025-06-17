@@ -1,0 +1,124 @@
+/* style-login.css */
+
+/* Reset dasar dan impor font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Latar belakang dengan gradasi */
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  padding: 10px;
+}
+
+/* Kontainer utama untuk form */
+.login-container {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Efek glassmorphism */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.login-form .title {
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  color: #333;
+}
+
+.login-form .subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Kotak untuk input field dan ikon */
+.input-box {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.input-box i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+}
+
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding-left: 45px; /* Memberi ruang untuk ikon */
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+  border-color: #9b59b6;
+  box-shadow: 0 0 8px rgba(155, 89, 182, 0.3);
+}
+
+/* Style untuk placeholder */
+.input-box input::placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+/* Tombol Login */
+.button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  cursor: pointer;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.button input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  transform: scale(1.02);
+}
+
+.button input:active {
+  transform: scale(0.99);
+}
+
+/* Pesan error */
+.pesan-error {
+  color: #c0392b;
+  background-color: #f5c6cb;
+  border: 1px solid #e74c3c;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
